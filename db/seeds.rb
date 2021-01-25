@@ -6,7 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts 'creating user'
-User.create(name: 'Erwin Feng')
+puts 'seeding data'
+
+puts 'creating characters'
+Character.create(user_id: User.all.sample.id, name: 'Ryu', hp: 100, ap: 50, dp: 50, image_url: 'https://imgur.com/CQzcL4O')
+Character.create(user_id: User.all.sample.id, name: "Gandalf The White", hp: 100, ap: 50, dp: 50, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxbp43OUOEm_rxio_mA-kR0oRjPSCH0hzwxA&usqp=CAU")
+Character.create(user_id: User.all.sample.id, name: "Captain Falcon", hp: 100, ap: 50, dp: 50, image_url: "https://static.wikia.nocookie.net/ssb/images/3/34/Captainfalcon_Artwork.jpg/revision/latest/top-crop/width/360/height/450?cb=20140803021034")
+Character.create(user_id: User.all.sample.id, name: 'Liu Kang', hp: 100, ap: 50, dp: 50, image_url: 'https://assets.www.warnerbros.co.uk/drupal-root/public/liu_kang_2.jpg')
 
 puts 'data seeded'
