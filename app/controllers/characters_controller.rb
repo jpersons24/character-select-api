@@ -8,14 +8,19 @@ class CharactersController < ApplicationController
     def show 
         character = Character.find(params[:id])
 
-        render json: character, except: [:created_at, :updated_at]
+        render json: character, include: ['items'], except: [:created_at, :updated_at]
     end
 
     def create 
         character = Character.create(character_params)
 
         render json: character, except: [:created_at, :updated_at]
-    end 
+    end
+
+    def destroy 
+        character = Character.find(params[:id])
+        character.destroy
+    end
 
     private
     def character_params

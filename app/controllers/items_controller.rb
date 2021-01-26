@@ -15,6 +15,11 @@ class ItemsController < ApplicationController
       render json: item, except: [:created_at, :updated_at]
    end
 
+   def destroy
+      item = Item.find(params[:id])
+      item.destroy
+   end
+
    private
 
    def item_params

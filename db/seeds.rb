@@ -24,7 +24,7 @@ puts 'creating items'
 
 # Item.create(name: 'Canteen', description: 'Small, durable container for holding liquids', points: 5)
 
-Item.create(name: 'Shield', description: 'Small shield, good for defense', points: 5)
+# Item.create(name: 'Shield', description: 'Small shield, good for defense', points: 5)
 
 
 puts 'data seeded'
