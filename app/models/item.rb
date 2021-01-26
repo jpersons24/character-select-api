@@ -4,5 +4,5 @@ class Item < ApplicationRecord
 
    validates :name, presence: true
    validates :description, presence: true
-   validates :attribute, presence: true
+   validates :points, presence: true
 end
