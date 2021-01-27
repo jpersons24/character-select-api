@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_26_161549) do
+ActiveRecord::Schema.define(version: 2021_01_27_153651) do
 
   create_table "characters", force: :cascade do |t|
     t.integer "user_id"
@@ -33,9 +33,10 @@ ActiveRecord::Schema.define(version: 2021_01_26_161549) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.integer "points
+    t.integer "points"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_url"
   end
 
   create_table "users", force: :cascade do |t|

@@ -15,7 +15,12 @@ class InventoriesController < ApplicationController
         charItem = Inventory.create(inventory_params)
 
         render json: { id: charItem.id, character: charItem.character, item: charItem.item }
-    end 
+    end
+
+    def destroy
+      charItem = Inventory.find(params[:id])
+      charItem.destroy
+    end
 
     private
 
