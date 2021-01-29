@@ -1,24 +1,17 @@
-# README
+# Ultimate Fantasy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This is the Rails API for Ultimate Fantasy!
 
-* Ruby version
+Begin by cloning or forking the repository: https://github.com/jpersons24/character-select-api
 
-* System dependencies
+Once you have opened the repository on your machine, begin by running 'bundle install'. This will ensure that you have all necessary Ruby gems installed.
 
-* Configuration
+Once you have successfully bundled, simply run 'rails s' or 'rails server' in your terminal to start the server.
 
-* Database creation
+To access the sqlite database on your browser, go to localhost:3000 in your browser. This will allow two things:
+- You will be able to see JSON formatted database information.
+- You can now use the app from the window you have opened through the index.html file. This file can be found in the front end repository: https://github.com/jpersons24/character-select
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Enjoy your Ultimate Fantasy Experience!!!
